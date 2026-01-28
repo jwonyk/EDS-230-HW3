@@ -6,9 +6,10 @@
 #' @param precip_jan Numeric vector of total precipitation in January per year.
 #'
 #' @returns Numeric vector of annual almond yield anomalies (ton/acre).
-#' @export
-#'
+#' 
 #' @examples almond_yield(tmin_feb = 5.6, precip_jan = 10)
+#' 
+#' @export
 
 almond_yield <- function(tmin_feb, precip_jan) {
   

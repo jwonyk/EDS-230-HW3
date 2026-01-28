@@ -8,7 +8,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-**GitHub Repository:** https://github.com/jwonyk/EDS-230-HW3
+**GitHub Repository:** https://github.com/jwonyk/EDS-230-HW-ALMOND-YIELD-PROFIT
 
 # Introduction
 
