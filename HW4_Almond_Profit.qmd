@@ -197,7 +197,7 @@ for (i in 1:n_sample) {
   # Store mean annual profit for this scenario
   sensitivity_results <- rbind(sensitivity_results,
                         data.frame(
-                          sim = i,
+                          samp = i,
                           price = params$price[i],
                           cost = params$cost[i],
                           mean_profit = mean(output$profit, na.rm = TRUE)))
