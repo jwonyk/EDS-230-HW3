@@ -169,6 +169,10 @@ set.seed(42)
 n_sample <- 300
 
 # Sample two parameter (price and cost)
+<<<<<<< HEAD
+=======
+# Use `pmax()` to prevent negative values
+>>>>>>> 923ca129734f4abcf67d94dbdf4aefd66b73ee18
 price_sample <- rnorm(n_sample, mean = 2100, sd = 250)
 cost_sample <- rnorm(n_sample, mean = 1500, sd = 200)
 
@@ -186,7 +190,11 @@ For each sampled combination of price and cost, the yield–profit model is re-r
 # For each sampled price and cost, recompute yield-driven profit  
 # and store mean annual profit
 sensitivity_results <- data.frame()
+<<<<<<< HEAD
 sensitivity_plot <- data.frame(matrix(ncol = n_sample, 
+=======
+sensitivity_plot <- data.frame(matrix(ncol = n_sample,
+>>>>>>> 923ca129734f4abcf67d94dbdf4aefd66b73ee18
                                       nrow = length(combined_temp_precip$year)))
 sensitivity_plot$year <- combined_temp_precip$year
 
@@ -212,6 +220,7 @@ for (i in 1:n_sample) {
 }
 
 head(sensitivity_results)
+head(sensitivity_plot)
 ```
 
 This following box plot shows the variation in Almond profit based on randomly sampling cost and price given our dataset's average for both variables and a standard deviation of 200 for cost and 250 for price. 
